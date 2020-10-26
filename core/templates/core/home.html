@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+{% block title %} Home 
+{% endblock title %} 
+
+{% block mainContent %}
+<div class="text-center">
+  <img
+    src="{% static 'core/image/jphoto.jpg'%}"
+    alt="myPhoto"
+    class="img-thumbnail mt-5"
+    height="300px"
+    width="300px"
+  />
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+<h1 class="font-weight-bold st-font">Hello,</h1>
+<div class="px-4" style="line-height:2rem">
+  <p style="text-indent:100px;">I am
+    <b class="text-warning"> Darshan Upadhyay</b> having 1 year of exp of Full stack. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum iste aperiam asperiores voluptatem sed, nulla dolorem aspernatur, quia praesentium qui soluta voluptatum ipsa nam doloribus! Recusandae atque et natus quae unde. Sapiente, fuga?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorum, dignissimos corrupti, veniam in maiores dolores ducimus animi quo quis quidem porro tenetur main technology i used is <b class="text-warning">Django</b> expedita vero molestiae. Itaque, quasi fuga tempora corporis id ut nam similique a qui fugit nostrum deserunt debitis. Quis qui facilis ratione?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error odio, beatae esse cumque tempore recusandae illum labore repudiandae id temporibus.
+  </p>
+</div>
+<div class="text-center">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contect</a>
+
+</div>
+</div>
+{% endblock mainContent %}
